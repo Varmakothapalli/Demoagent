@@ -237,40 +237,44 @@
 </script>
  
     <!-- Salesforce Chatbot -->
-<script>
 
-        window.addEventListener('load', function() {
+<script type='text/javascript'>
 
-            window.embedded_svc = window.embedded_svc || {};
+	function initEmbeddedMessaging() {
 
-            window.embedded_svc.settings = {
+		try {
 
-                displayHelpButton: true,
-
-                language: 'en-US',
-
-                defaultMinimizedText: 'Chat with us',
-
-                enabledFeatures: ['LiveAgent'],
-
-                storageDomain: 'yourdomain.com'
-
-            };
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
  
-            var script = document.createElement('script');
+			embeddedservice_bootstrap.init(
 
-            script.src = 'https://ORG_ID.salesforceliveagent.com/chat';
+				'00DHs00000EdyPr',
 
-            script.onload = function() {
+				'Demo_External_Site_Check_Embedded',
 
-                embedded_svc.init('https://ORG_ID.my.salesforce.com', 'DEPLOYMENT_ID', 'your_deployment_path');
+				'https://bn1730704758553.my.site.com/ESWDemoExternalSiteChe1743055477403',
 
-            };
+				{
 
-            document.body.appendChild(script);
+					scrt2URL: 'https://bn1730704758553.my.salesforce-scrt.com'
 
-        });
+				}
+
+			);
+
+		} catch (err) {
+
+			console.error('Error loading Embedded Messaging: ', err);
+
+		}
+
+	};
 </script>
+<script type='text/javascript' src='https://bn1730704758553.my.site.com/ESWDemoExternalSiteChe1743055477403/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+Login | Mysite
+Mysite Customer Secure Login Page. Login to your Mysite Customer Account.
+ 
  
 </body>
 </html>
