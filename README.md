@@ -271,9 +271,6 @@
 	};
 </script>
 <script type='text/javascript' src='https://bn1730704758553.my.site.com/ESWDemoExternalSiteChe1743055477403/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-
-Login | Mysite
-Mysite Customer Secure Login Page. Login to your Mysite Customer Account.
  
  
 </body>
