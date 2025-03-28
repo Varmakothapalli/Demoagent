@@ -1,37 +1,5 @@
 <html lang="en">
 <head>
-<script type='text/javascript'>
-
-	function initEmbeddedMessaging() {
-
-		try {
-
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
- 
-			embeddedservice_bootstrap.init(
-
-				'00DHs00000EdyPr',
-
-				'Demo_External_Site_Check_Embedded',
-
-				'https://bn1730704758553.my.site.com/ESWDemoExternalSiteChe1743055477403',
-
-				{
-
-					scrt2URL: 'https://bn1730704758553.my.salesforce-scrt.com'
-
-				}
-
-			);
-
-		} catch (err) {
-
-			console.error('Error loading Embedded Messaging: ', err);
-
-		}
-
-	};
-</script>
 <script type='text/javascript' src='https://bn1730704758553.my.site.com/ESWDemoExternalSiteChe1743055477403/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 <meta charset="UTF-8">
@@ -268,6 +236,26 @@
             document.getElementById("booking-section").style.display = "none";
 
         }
+</script>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+ 
+			embeddedservice_bootstrap.init(
+				'00DHs00000EdyPr',
+				'Demo_External_Site_Check_Embedded',
+				'https://bn1730704758553.my.site.com/ESWDemoExternalSiteChe1743055477403',
+				{
+					scrt2URL: 'https://bn1730704758553.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://bn1730704758553.my.site.com/ESWDemoExternalSiteChe1743055477403/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'>
 </script>
 </body>
 </html>
